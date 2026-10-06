@@ -1,0 +1,118 @@
+:root {
+  --sunset-orange: #e8734a;
+  --sunset-deep: #c4502b;
+  --sand: #f4e9d8;
+  --earth-brown: #5c3d2e;
+  --sky-dusk: #2b2730;
+  --text-light: #fff8ef;
+  --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-stack);
+  background: linear-gradient(160deg, var(--sand) 0%, #ead9bd 100%);
+  color: var(--earth-brown);
+  min-height: 100vh;
+}
+
+.page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 48px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero {
+  margin-bottom: 24px;
+}
+
+.hero__title {
+  font-size: clamp(2.2rem, 8vw, 3.2rem);
+  margin: 0 0 12px;
+  color: var(--sunset-deep);
+  letter-spacing: 0.02em;
+}
+
+.hero__tagline {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 0;
+  color: var(--earth-brown);
+  max-width: 480px;
+}
+
+.intro {
+  margin: 8px 0 32px;
+}
+
+.intro p {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.social-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 24px;
+  background: var(--sunset-orange);
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 999px;
+  box-shadow: 0 4px 14px rgba(196, 80, 43, 0.25);
+  transition: transform 0.15s ease, background 0.15s ease;
+  min-width: 140px;
+  justify-content: center;
+}
+
+.social-card:hover,
+.social-card:focus-visible {
+  background: var(--sunset-deep);
+  transform: translateY(-2px);
+}
+
+.social-card__icon {
+  flex-shrink: 0;
+}
+
+.footer {
+  margin-top: auto;
+  padding-top: 24px;
+  font-size: 0.85rem;
+  color: var(--earth-brown);
+  opacity: 0.8;
+}
+
+.footer p {
+  margin: 4px 0;
+}
+
+.footer__domain {
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 420px) {
+  .social-card {
+    width: 100%;
+  }
+}
