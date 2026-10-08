@@ -116,3 +116,10 @@ body {
     width: 100%;
   }
 }
+
+/* Typography (needed by app/login/page.tsx) */
+.font-display { font-family: 'Playfair Display', Georgia, serif !important; }
+
+/* Spin animation for loading indicators (needed by admin UI) */
+.spin { animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
