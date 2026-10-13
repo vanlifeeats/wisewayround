@@ -47,16 +47,16 @@ export default function HomePage() {
             <img
               src="/wwr-logo.svg"
               alt="Wise Way Round"
-              className="mx-auto h-24 w-24 sm:h-28 sm:w-28 lg:mx-0"
-              width={112}
-              height={112}
+              className="mx-auto h-40 w-40 sm:h-48 sm:w-48 lg:mx-0"
+              width={192}
+              height={192}
             />
 
             <p className="mt-8 text-xs font-bold uppercase tracking-[0.2em] text-[#D97706]">
               Vanlife &middot; Travel &middot; Culture
             </p>
 
-            <h1 className="mt-4 max-w-xl font-heading text-4xl font-bold leading-[1.15] tracking-tight text-[#102A43] sm:text-5xl lg:mx-0 lg:text-[3.4rem]">
+            <h1 className="mx-auto mt-4 max-w-lg font-heading text-2xl font-bold leading-[1.3] tracking-tight text-[#102A43] sm:text-[1.75rem] lg:mx-0 lg:text-3xl">
               We are Zoe and Mark and we are treading the globe, seeking adventure, exploring culture, and finding words of wisdom along the way.
             </h1>
 
