@@ -57,8 +57,8 @@ export default function HomePage() {
             src="/zoe-and-mark.jpg"
             alt="Zoe and Mark on their travels"
             className="layout__photo-img"
-            width={2228}
-            height={3960}
+            width={3672}
+            height={4896}
           />
         </div>
       </div>
