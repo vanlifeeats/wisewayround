@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { MapPin } from 'lucide-react'
+import { NavBar } from '@/components/NavBar'
 
 const SOCIALS = [
   {
@@ -51,6 +52,8 @@ export default function HomePage() {
               width={192}
               height={192}
             />
+
+            <NavBar className="mt-6 lg:justify-start" />
 
             <p className="mt-8 text-xs font-bold uppercase tracking-[0.2em] text-[#D97706]">
               Vanlife &middot; Travel &middot; Culture
