@@ -24,13 +24,85 @@ body {
 }
 
 .page {
-  max-width: 680px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 56px 24px 32px;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 40px;
+}
+
+.layout__content {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  width: 100%;
+}
+
+.layout__photo {
+  width: 100%;
+  max-width: 320px;
+  flex-shrink: 0;
+}
+
+.layout__photo-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 28px;
+  box-shadow: 0 16px 40px rgba(27, 27, 47, 0.18);
+}
+
+@media (min-width: 860px) {
+  .layout {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 56px;
+  }
+
+  .layout__content {
+    flex: 1;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .hero,
+  .intro,
+  .socials {
+    align-self: flex-start;
+  }
+
+  .hero__logo {
+    margin: 0 0 8px;
+  }
+
+  .hero__tagline {
+    text-align: left;
+  }
+
+  .intro p {
+    margin: 0;
+    text-align: left;
+  }
+
+  .socials {
+    justify-content: flex-start;
+  }
+
+  .footer {
+    text-align: left;
+  }
+
+  .layout__photo {
+    max-width: 360px;
+    position: sticky;
+    top: 56px;
+  }
 }
 
 .hero {
