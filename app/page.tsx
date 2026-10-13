@@ -43,12 +43,9 @@ export default function HomePage() {
       <section className="mx-auto max-w-6xl px-6 pt-14 pb-20 lg:pt-20">
         <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-16">
           <div className="flex-1 text-center lg:text-left">
-            <div className="mb-6 flex items-center justify-center gap-3 lg:justify-start">
+            <div className="mb-6 flex items-center justify-center lg:justify-start">
               {/* eslint-disable-next-line @next/next/no-img-element -- local trusted SVG, no need for next/image's optimizer */}
-              <img src="/wwr-logo.svg" alt="" className="h-10 w-10" width={40} height={40} />
-              <span className="font-heading text-xl font-bold tracking-tight text-[#102A43]">
-                Wise Way Round
-              </span>
+              <img src="/wwr-logo.svg" alt="Wise Way Round" className="h-28 w-28 sm:h-32 sm:w-32" width={220} height={220} />
             </div>
 
             <h1 className="font-heading text-4xl font-bold leading-tight tracking-tight text-[#102A43] sm:text-5xl lg:text-6xl">
@@ -87,7 +84,7 @@ export default function HomePage() {
             <div className="absolute -bottom-4 left-4 flex items-center gap-2 rounded-full bg-[#FDFBF7] px-4 py-2 shadow-lg">
               <MapPin size={16} className="text-[#D97706]" aria-hidden="true" />
               <span className="text-sm font-semibold text-[#102A43]">
-                Currently Exploring: [Location]
+                Currently Exploring: Europe
               </span>
             </div>
           </div>
