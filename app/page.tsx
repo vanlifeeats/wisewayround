@@ -3,7 +3,7 @@ export default function HomePage() {
     <main className="page">
       <header className="hero">
         {/* eslint-disable-next-line @next/next/no-img-element -- local trusted SVG, no need for next/image's optimizer */}
-        <img src="/wwr-logo.svg" alt="Wise Way Round" className="hero__logo" width={220} height={220} />
+        <img src="/wwr-logo.svg" alt="Wise Way Round" className="hero__logo" width={460} height={460} />
         <h1 className="hero__title sr-only">Wise Way Round</h1>
         <p className="hero__tagline">Treading the globe. Seeking adventure. Exploring culture. Finding words of wisdom along the way.</p>
       </header>
