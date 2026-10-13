@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import { MapPin, Play } from 'lucide-react'
 
+// PLACEHOLDER: follower counts are not yet confirmed real figures — fill in
+// Zoe & Mark's actual subscriber/follower counts here before this is final.
 const SOCIALS = [
   {
     name: 'YouTube',
     href: 'https://youtube.com/@wisewayround',
     cta: 'Watch Vlogs',
-    followers: '12K subscribers',
+    followers: '[Subscriber count]',
     gradient: 'from-[#FF0000]/90 to-[#C00000]/90',
     chip: 'bg-[#FF0000]',
     icon: (
@@ -19,7 +21,7 @@ const SOCIALS = [
     name: 'Instagram',
     href: 'https://instagram.com/wisewayround',
     cta: 'Follow Live',
-    followers: '8.4K followers',
+    followers: '[Follower count]',
     gradient: 'from-[#feda75] via-[#d62976] to-[#4f5bd5]',
     chip: 'bg-gradient-to-br from-[#feda75] via-[#d62976] to-[#4f5bd5]',
     icon: (
@@ -32,7 +34,7 @@ const SOCIALS = [
     name: 'TikTok',
     href: 'https://tiktok.com/@wisewayround',
     cta: 'Watch Shorts',
-    followers: '21K followers',
+    followers: '[Follower count]',
     gradient: 'from-[#010101] via-[#25F4EE]/40 to-[#FE2C55]/60',
     chip: 'bg-black',
     icon: (
