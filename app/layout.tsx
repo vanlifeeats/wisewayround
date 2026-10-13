@@ -1,7 +1,18 @@
 import type { Metadata, Viewport } from 'next'
+import { Playfair_Display, Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/ThemeContext'
 import { SessionProvider } from '@/components/SessionProvider'
+
+const playfairDisplay = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair',
+})
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  variable: '--font-jakarta',
+})
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://wisewayround.co.uk'
 
@@ -30,7 +41,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${playfairDisplay.variable} ${plusJakartaSans.variable}`}>
       <body>
         <SessionProvider>
           <ThemeProvider>{children}</ThemeProvider>
