@@ -38,50 +38,68 @@ const SOCIALS = [
 
 export default function HomePage() {
   return (
-    <main className="relative overflow-hidden bg-white text-[#102A43]">
-      {/* Hero */}
-      <section className="relative mx-auto max-w-6xl px-6 pt-16 pb-20 lg:pt-20">
-        <div className="flex flex-col gap-14 lg:flex-row lg:items-center lg:gap-16">
-          <div className="flex-1 text-center lg:text-left">
-            <div className="mb-2 flex justify-center lg:justify-start">
-              {/* eslint-disable-next-line @next/next/no-img-element -- local trusted SVG, no need for next/image's optimizer */}
-              <img
-                src="/wwr-logo.svg"
-                alt="Wise Way Round"
-                className="h-56 w-56 drop-shadow-sm sm:h-64 sm:w-64 lg:h-72 lg:w-72"
-                width={288}
-                height={288}
-              />
-            </div>
+    <main className="bg-white text-[#102A43]">
+      {/* Hero — fills the viewport like a proper landing page, vertically centred */}
+      <section className="mx-auto flex min-h-[88vh] max-w-7xl flex-col justify-center px-6 py-16 lg:px-10">
+        <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-20">
+          <div className="text-center lg:text-left">
+            {/* eslint-disable-next-line @next/next/no-img-element -- local trusted SVG, no need for next/image's optimizer */}
+            <img
+              src="/wwr-logo.svg"
+              alt="Wise Way Round"
+              className="mx-auto h-24 w-24 sm:h-28 sm:w-28 lg:mx-0"
+              width={112}
+              height={112}
+            />
 
-            <h1 className="font-heading text-4xl font-bold leading-tight tracking-tight text-[#102A43] sm:text-5xl lg:text-6xl">
+            <p className="mt-8 text-xs font-bold uppercase tracking-[0.2em] text-[#D97706]">
+              Vanlife &middot; Travel &middot; Culture
+            </p>
+
+            <h1 className="mt-4 max-w-xl font-heading text-4xl font-bold leading-[1.15] tracking-tight text-[#102A43] sm:text-5xl lg:mx-0 lg:text-[3.4rem]">
               We are Zoe and Mark and we are treading the globe, seeking adventure, exploring culture, and finding words of wisdom along the way.
             </h1>
 
             {/* PLACEHOLDER: "Weekly Vlogs" is an illustrative example tag from
                 the client brief, not a verified fact — Zoe & Mark will
                 confirm/replace this later. */}
-            <div className="mt-7 flex flex-wrap justify-center gap-2 lg:justify-start">
-              <span className="rounded-full bg-[#102A43]/5 px-4 py-1.5 text-sm font-semibold text-[#102A43]">
+            <div className="mt-7 flex flex-wrap justify-center gap-2.5 lg:justify-start">
+              <span className="rounded-full border border-[#102A43]/10 bg-white px-4 py-1.5 text-sm font-semibold text-[#102A43] shadow-sm">
                 Full-time Vanlifers
               </span>
-              <span className="rounded-full bg-[#2F5D50]/10 px-4 py-1.5 text-sm font-semibold text-[#2F5D50]">
+              <span className="rounded-full border border-[#2F5D50]/15 bg-white px-4 py-1.5 text-sm font-semibold text-[#2F5D50] shadow-sm">
                 Weekly Vlogs
               </span>
             </div>
+
+            <div className="mt-9 flex flex-wrap justify-center gap-3 lg:justify-start" aria-label="Follow us on social media">
+              {SOCIALS.map((social) => (
+                <a
+                  key={social.name}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`inline-flex items-center gap-2.5 rounded-full px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-md ${social.chip} [&_svg]:h-[18px] [&_svg]:w-[18px]`}
+                >
+                  {social.icon}
+                  {social.name}
+                </a>
+              ))}
+            </div>
           </div>
 
-          <div className="relative mx-auto w-full max-w-sm flex-shrink-0 lg:mx-0 lg:max-w-[420px]">
+          <div className="relative mx-auto w-full max-w-sm lg:mx-0 lg:max-w-md">
+            <div className="absolute -inset-3 -z-10 rounded-[2.25rem] border border-[#D97706]/20" aria-hidden="true" />
             {/* eslint-disable-next-line @next/next/no-img-element -- local trusted photo, simple static asset */}
             <img
               src="/zoe-and-mark.jpg"
               alt="Zoe and Mark on their travels"
-              className="w-full rounded-3xl object-cover shadow-[0_24px_60px_rgba(16,42,67,0.25)] ring-1 ring-[#102A43]/5"
+              className="w-full rounded-[2rem] object-cover shadow-[0_30px_70px_-15px_rgba(16,42,67,0.35)]"
               width={3672}
               height={4896}
             />
-            <div className="absolute -bottom-4 left-4 flex items-center gap-2 rounded-full bg-white px-4 py-2 shadow-lg ring-1 ring-[#102A43]/5">
-              <MapPin size={16} className="text-[#D97706]" aria-hidden="true" />
+            <div className="absolute left-5 top-5 flex items-center gap-2 rounded-full bg-white/95 px-4 py-2 shadow-md backdrop-blur">
+              <MapPin size={15} className="text-[#D97706]" aria-hidden="true" />
               <span className="text-sm font-semibold text-[#102A43]">
                 Currently Exploring: Europe
               </span>
@@ -90,40 +108,18 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Connect & Watch — small sleek icon row */}
-      <section className="relative mx-auto max-w-6xl px-6 pb-24" aria-label="Follow us on social media">
-        <div className="flex flex-col items-center gap-4 lg:items-start">
-          <p className="text-sm font-semibold uppercase tracking-wide text-[#102A43]/40">
-            Follow the journey
-          </p>
-          <div className="flex items-center gap-4">
-            {SOCIALS.map((social) => (
-              <a
-                key={social.name}
-                href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={social.name}
-                className={`flex h-12 w-12 items-center justify-center rounded-full ${social.chip} shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg [&_svg]:h-5 [&_svg]:w-5`}
-              >
-                {social.icon}
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Footer */}
-      <footer className="relative border-t border-[#102A43]/10 bg-white">
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-8 sm:flex-row">
-          <nav className="flex flex-wrap items-center justify-center gap-5 text-sm font-medium text-[#102A43]/70">
-            <Link href="/" className="hover:text-[#102A43]">Home</Link>
-            <a href="https://youtube.com/@wisewayround" target="_blank" rel="noopener noreferrer" className="hover:text-[#102A43]">YouTube</a>
-            <a href="https://instagram.com/wisewayround" target="_blank" rel="noopener noreferrer" className="hover:text-[#102A43]">Instagram</a>
-            <a href="https://tiktok.com/@wisewayround" target="_blank" rel="noopener noreferrer" className="hover:text-[#102A43]">TikTok</a>
-          </nav>
+      <footer className="border-t border-[#102A43]/10 bg-white">
+        <div className="mx-auto flex max-w-7xl flex-col items-center gap-6 px-6 py-12 sm:flex-row sm:justify-between">
+          <div className="flex items-center gap-3">
+            {/* eslint-disable-next-line @next/next/no-img-element -- local trusted SVG, no need for next/image's optimizer */}
+            <img src="/wwr-logo.svg" alt="" className="h-9 w-9" width={36} height={36} aria-hidden="true" />
+            <Link href="/" className="font-heading text-base font-bold text-[#102A43]">
+              Wise Way Round
+            </Link>
+          </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
             {SOCIALS.map((social) => (
               <a
                 key={social.name}
@@ -131,7 +127,7 @@ export default function HomePage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.name}
-                className={`flex h-8 w-8 items-center justify-center rounded-full ${social.chip} [&_svg]:h-4 [&_svg]:w-4`}
+                className={`flex h-9 w-9 items-center justify-center rounded-full ${social.chip} transition-all duration-300 ease-in-out hover:-translate-y-0.5 [&_svg]:h-4 [&_svg]:w-4`}
               >
                 {social.icon}
               </a>
