@@ -1,15 +1,10 @@
 import Link from 'next/link'
-import { MapPin, Play } from 'lucide-react'
+import { MapPin } from 'lucide-react'
 
-// PLACEHOLDER: follower counts are not yet confirmed real figures — fill in
-// Zoe & Mark's actual subscriber/follower counts here before this is final.
 const SOCIALS = [
   {
     name: 'YouTube',
     href: 'https://youtube.com/@wisewayround',
-    cta: 'Watch Vlogs',
-    followers: '[Subscriber count]',
-    gradient: 'from-[#FF0000]/90 to-[#C00000]/90',
     chip: 'bg-[#FF0000]',
     icon: (
       <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
@@ -20,9 +15,6 @@ const SOCIALS = [
   {
     name: 'Instagram',
     href: 'https://instagram.com/wisewayround',
-    cta: 'Follow Live',
-    followers: '[Follower count]',
-    gradient: 'from-[#feda75] via-[#d62976] to-[#4f5bd5]',
     chip: 'bg-gradient-to-br from-[#feda75] via-[#d62976] to-[#4f5bd5]',
     icon: (
       <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
@@ -33,9 +25,6 @@ const SOCIALS = [
   {
     name: 'TikTok',
     href: 'https://tiktok.com/@wisewayround',
-    cta: 'Watch Shorts',
-    followers: '[Follower count]',
-    gradient: 'from-[#010101] via-[#25F4EE]/40 to-[#FE2C55]/60',
     chip: 'bg-black',
     icon: (
       <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
@@ -46,18 +35,6 @@ const SOCIALS = [
     ),
   },
 ]
-
-// PLACEHOLDER CONTENT: these three cards are stand-ins for real vlog/guide
-// posts and must be replaced with real content later.
-const CONTENT_CARDS = [
-  { tag: 'Vanlife', title: 'Coming soon: our next adventure', meta: '8 min watch', gradient: 'from-[#D97706] to-[#C05621]' },
-  { tag: 'Guides', title: 'Coming soon: our next adventure', meta: '6 min read', gradient: 'from-[#102A43] to-[#2F5D50]' },
-  { tag: 'Culture', title: 'Coming soon: our next adventure', meta: '10 min watch', gradient: 'from-[#2F5D50] to-[#D97706]' },
-]
-
-// PLACEHOLDER STRUCTURE: static example route chips; replace with real
-// journey/location data later.
-const ROUTE_STOPS = ['Lisbon', 'Seville', 'Marrakech', 'Chefchaouen', 'Tangier']
 
 export default function HomePage() {
   return (
@@ -117,71 +94,20 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Connect & Watch */}
-      <section className="mx-auto max-w-6xl px-6 pb-20" aria-label="Follow us on social media">
-        <h2 className="font-heading text-2xl font-bold text-[#102A43] sm:text-3xl">Connect &amp; Watch</h2>
-        <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-3">
+      {/* Connect & Watch — small sleek icon row */}
+      <section className="mx-auto max-w-6xl px-6 pb-24" aria-label="Follow us on social media">
+        <div className="flex items-center justify-center gap-4 lg:justify-start">
           {SOCIALS.map((social) => (
-            <div
+            <a
               key={social.name}
-              className={`group relative overflow-hidden rounded-2xl bg-gradient-to-br ${social.gradient} p-6 text-white shadow-md transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl`}
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={social.name}
+              className={`flex h-11 w-11 items-center justify-center rounded-full ${social.chip} shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg [&_svg]:h-5 [&_svg]:w-5`}
             >
-              <span className={`flex h-12 w-12 items-center justify-center rounded-xl ${social.chip}`}>
-                {social.icon}
-              </span>
-              <p className="mt-5 text-lg font-bold">{social.name}</p>
-              <p className="text-sm text-white/80">{social.followers}</p>
-              <a
-                href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-5 inline-flex items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-[#102A43] transition-all duration-300 ease-in-out group-hover:bg-white"
-              >
-                <Play size={14} aria-hidden="true" />
-                {social.cta}
-              </a>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Latest Content grid */}
-      <section className="mx-auto max-w-6xl px-6 pb-20">
-        <h2 className="font-heading text-2xl font-bold text-[#102A43] sm:text-3xl">Latest Content</h2>
-        {/* PLACEHOLDER CONTENT: these three cards are stand-ins for real vlog/guide posts and must be replaced with real content later. */}
-        <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
-          {CONTENT_CARDS.map((card, i) => (
-            <div
-              key={i}
-              className="overflow-hidden rounded-2xl bg-white shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl"
-            >
-              <div className={`h-40 w-full bg-gradient-to-br ${card.gradient}`} />
-              <div className="p-5">
-                <span className="rounded-full bg-[#102A43]/5 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-[#102A43]">
-                  {card.tag}
-                </span>
-                <p className="mt-3 font-heading text-lg font-bold text-[#102A43]">{card.title}</p>
-                <p className="mt-1 text-sm text-[#102A43]/60">{card.meta}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Where We've Been strip */}
-      <section className="mx-auto max-w-6xl px-6 pb-20">
-        <h2 className="font-heading text-2xl font-bold text-[#102A43] sm:text-3xl">Where We&apos;ve Been</h2>
-        {/* PLACEHOLDER STRUCTURE: static example route chips; replace with real journey/location data later. */}
-        <div className="mt-8 flex items-center gap-0 overflow-x-auto pb-2">
-          {ROUTE_STOPS.map((stop, i) => (
-            <div key={stop} className="flex items-center">
-              <span className="whitespace-nowrap rounded-full border border-[#102A43]/15 bg-white px-4 py-2 text-sm font-semibold text-[#102A43] shadow-sm">
-                {stop}
-              </span>
-              {i < ROUTE_STOPS.length - 1 && (
-                <span className="mx-2 h-px w-10 flex-shrink-0 border-t border-dashed border-[#D97706]/50" aria-hidden="true" />
-              )}
-            </div>
+              {social.icon}
+            </a>
           ))}
         </div>
       </section>
