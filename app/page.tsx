@@ -38,14 +38,24 @@ const SOCIALS = [
 
 export default function HomePage() {
   return (
-    <main className="bg-[#FDFBF7] text-[#102A43]">
+    <main className="relative overflow-hidden bg-[#FDFBF7] text-[#102A43]">
+      {/* Decorative background accents — soft colour blobs for a fun, lively feel */}
+      <div className="pointer-events-none absolute -top-32 -right-32 h-96 w-96 rounded-full bg-[#D97706]/10 blur-3xl" aria-hidden="true" />
+      <div className="pointer-events-none absolute top-1/3 -left-40 h-96 w-96 rounded-full bg-[#2F5D50]/10 blur-3xl" aria-hidden="true" />
+
       {/* Hero */}
-      <section className="mx-auto max-w-6xl px-6 pt-14 pb-20 lg:pt-20">
-        <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-16">
+      <section className="relative mx-auto max-w-6xl px-6 pt-16 pb-20 lg:pt-20">
+        <div className="flex flex-col gap-14 lg:flex-row lg:items-center lg:gap-16">
           <div className="flex-1 text-center lg:text-left">
-            <div className="mb-6 flex items-center justify-center lg:justify-start">
+            <div className="mb-2 flex justify-center lg:justify-start">
               {/* eslint-disable-next-line @next/next/no-img-element -- local trusted SVG, no need for next/image's optimizer */}
-              <img src="/wwr-logo.svg" alt="Wise Way Round" className="h-28 w-28 sm:h-32 sm:w-32" width={220} height={220} />
+              <img
+                src="/wwr-logo.svg"
+                alt="Wise Way Round"
+                className="h-56 w-56 drop-shadow-sm sm:h-64 sm:w-64 lg:h-72 lg:w-72"
+                width={288}
+                height={288}
+              />
             </div>
 
             <h1 className="font-heading text-4xl font-bold leading-tight tracking-tight text-[#102A43] sm:text-5xl lg:text-6xl">
@@ -56,15 +66,12 @@ export default function HomePage() {
               We&apos;re Zoe &amp; Mark — trading the ordinary for the open road.
             </p>
 
-            {/* PLACEHOLDER: "30+ Countries" and "Weekly Vlogs" are illustrative
-                example stats from the client brief, not verified facts — Zoe &
-                Mark will confirm/replace these numbers later. */}
+            {/* PLACEHOLDER: "Weekly Vlogs" is an illustrative example tag from
+                the client brief, not a verified fact — Zoe & Mark will
+                confirm/replace this later. */}
             <div className="mt-7 flex flex-wrap justify-center gap-2 lg:justify-start">
               <span className="rounded-full bg-[#102A43]/5 px-4 py-1.5 text-sm font-semibold text-[#102A43]">
                 Full-time Vanlifers
-              </span>
-              <span className="rounded-full bg-[#D97706]/10 px-4 py-1.5 text-sm font-semibold text-[#C05621]">
-                30+ Countries
               </span>
               <span className="rounded-full bg-[#2F5D50]/10 px-4 py-1.5 text-sm font-semibold text-[#2F5D50]">
                 Weekly Vlogs
@@ -73,15 +80,16 @@ export default function HomePage() {
           </div>
 
           <div className="relative mx-auto w-full max-w-sm flex-shrink-0 lg:mx-0 lg:max-w-[420px]">
+            <div className="absolute -inset-3 -z-10 rounded-[2rem] bg-gradient-to-br from-[#D97706]/20 via-transparent to-[#2F5D50]/20 blur-xl" aria-hidden="true" />
             {/* eslint-disable-next-line @next/next/no-img-element -- local trusted photo, simple static asset */}
             <img
               src="/zoe-and-mark.jpg"
               alt="Zoe and Mark on their travels"
-              className="w-full rounded-3xl object-cover shadow-[0_24px_60px_rgba(16,42,67,0.25)]"
+              className="w-full rounded-3xl object-cover shadow-[0_24px_60px_rgba(16,42,67,0.25)] ring-1 ring-[#102A43]/5"
               width={3672}
               height={4896}
             />
-            <div className="absolute -bottom-4 left-4 flex items-center gap-2 rounded-full bg-[#FDFBF7] px-4 py-2 shadow-lg">
+            <div className="absolute -bottom-4 left-4 flex items-center gap-2 rounded-full bg-[#FDFBF7] px-4 py-2 shadow-lg ring-1 ring-[#102A43]/5">
               <MapPin size={16} className="text-[#D97706]" aria-hidden="true" />
               <span className="text-sm font-semibold text-[#102A43]">
                 Currently Exploring: Europe
@@ -92,25 +100,30 @@ export default function HomePage() {
       </section>
 
       {/* Connect & Watch — small sleek icon row */}
-      <section className="mx-auto max-w-6xl px-6 pb-24" aria-label="Follow us on social media">
-        <div className="flex items-center justify-center gap-4 lg:justify-start">
-          {SOCIALS.map((social) => (
-            <a
-              key={social.name}
-              href={social.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={social.name}
-              className={`flex h-11 w-11 items-center justify-center rounded-full ${social.chip} shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg [&_svg]:h-5 [&_svg]:w-5`}
-            >
-              {social.icon}
-            </a>
-          ))}
+      <section className="relative mx-auto max-w-6xl px-6 pb-24" aria-label="Follow us on social media">
+        <div className="flex flex-col items-center gap-4 lg:items-start">
+          <p className="text-sm font-semibold uppercase tracking-wide text-[#102A43]/40">
+            Follow the journey
+          </p>
+          <div className="flex items-center gap-4">
+            {SOCIALS.map((social) => (
+              <a
+                key={social.name}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={social.name}
+                className={`flex h-12 w-12 items-center justify-center rounded-full ${social.chip} shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg [&_svg]:h-5 [&_svg]:w-5`}
+              >
+                {social.icon}
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-[#102A43]/10 bg-[#FDFBF7]">
+      <footer className="relative border-t border-[#102A43]/10 bg-[#FDFBF7]">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-8 sm:flex-row">
           <nav className="flex flex-wrap items-center justify-center gap-5 text-sm font-medium text-[#102A43]/70">
             <Link href="/" className="hover:text-[#102A43]">Home</Link>
