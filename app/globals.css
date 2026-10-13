@@ -1,10 +1,13 @@
 :root {
-  --sunset-orange: #e8734a;
-  --sunset-deep: #c4502b;
-  --sand: #f4e9d8;
-  --earth-brown: #5c3d2e;
-  --sky-dusk: #2b2730;
-  --text-light: #fff8ef;
+  --coral: #ff5a5f;
+  --coral-deep: #e8434a;
+  --sun: #ffb347;
+  --teal: #00c2a8;
+  --violet: #7c5cff;
+  --ink: #1b1b2f;
+  --ink-soft: #5c5c72;
+  --cloud: #ffffff;
+  --cloud-soft: #f6f7fb;
   --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
@@ -15,15 +18,15 @@
 body {
   margin: 0;
   font-family: var(--font-stack);
-  background: linear-gradient(160deg, var(--sand) 0%, #ead9bd 100%);
-  color: var(--earth-brown);
+  background: #ffffff;
+  color: var(--ink);
   min-height: 100vh;
 }
 
 .page {
-  max-width: 640px;
+  max-width: 680px;
   margin: 0 auto;
-  padding: 48px 24px 32px;
+  padding: 56px 24px 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,76 +34,106 @@ body {
 }
 
 .hero {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .hero__title {
-  font-size: clamp(2.2rem, 8vw, 3.2rem);
-  margin: 0 0 12px;
-  color: var(--sunset-deep);
-  letter-spacing: 0.02em;
+  font-size: clamp(2.4rem, 9vw, 3.6rem);
+  margin: 0 0 14px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  background: linear-gradient(100deg, var(--coral) 0%, var(--sun) 45%, var(--violet) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .hero__tagline {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   line-height: 1.5;
   margin: 0;
-  color: var(--earth-brown);
+  color: var(--ink-soft);
   max-width: 480px;
+  font-weight: 500;
 }
 
 .intro {
-  margin: 8px 0 32px;
+  margin: 8px 0 36px;
 }
 
 .intro p {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.05rem;
+  line-height: 1.65;
   max-width: 500px;
   margin: 0 auto;
+  color: var(--ink);
 }
 
 .socials {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 20px;
   justify-content: center;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 44px;
 }
 
 .social-card {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 14px 24px;
-  background: var(--sunset-orange);
-  color: var(--text-light);
+  gap: 12px;
+  padding: 16px 26px;
+  background: var(--cloud);
+  color: var(--ink);
   text-decoration: none;
-  font-weight: 600;
-  border-radius: 999px;
-  box-shadow: 0 4px 14px rgba(196, 80, 43, 0.25);
-  transition: transform 0.15s ease, background 0.15s ease;
-  min-width: 140px;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: 1px solid rgba(27, 27, 47, 0.06);
+  box-shadow: 0 4px 16px rgba(27, 27, 47, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-width: 160px;
   justify-content: center;
 }
 
 .social-card:hover,
 .social-card:focus-visible {
-  background: var(--sunset-deep);
-  transform: translateY(-2px);
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 12px 28px rgba(27, 27, 47, 0.16);
+}
+
+.social-card__icon-chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 11px;
+  flex-shrink: 0;
+}
+
+.social-card__icon-chip--youtube {
+  background: #ff0000;
+}
+
+.social-card__icon-chip--instagram {
+  background: linear-gradient(45deg, #feda75 0%, #fa7e1e 25%, #d62976 50%, #962fbf 75%, #4f5bd5 100%);
+}
+
+.social-card__icon-chip--tiktok {
+  background: #010101;
 }
 
 .social-card__icon {
   flex-shrink: 0;
+  display: block;
 }
 
 .footer {
   margin-top: auto;
   padding-top: 24px;
   font-size: 0.85rem;
-  color: var(--earth-brown);
-  opacity: 0.8;
+  color: var(--ink-soft);
 }
 
 .footer p {
