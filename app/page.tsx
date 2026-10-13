@@ -38,11 +38,7 @@ const SOCIALS = [
 
 export default function HomePage() {
   return (
-    <main className="relative overflow-hidden bg-[#FDFBF7] text-[#102A43]">
-      {/* Decorative background accents — soft colour blobs for a fun, lively feel */}
-      <div className="pointer-events-none absolute -top-32 -right-32 h-96 w-96 rounded-full bg-[#D97706]/10 blur-3xl" aria-hidden="true" />
-      <div className="pointer-events-none absolute top-1/3 -left-40 h-96 w-96 rounded-full bg-[#2F5D50]/10 blur-3xl" aria-hidden="true" />
-
+    <main className="relative overflow-hidden bg-white text-[#102A43]">
       {/* Hero */}
       <section className="relative mx-auto max-w-6xl px-6 pt-16 pb-20 lg:pt-20">
         <div className="flex flex-col gap-14 lg:flex-row lg:items-center lg:gap-16">
@@ -59,12 +55,8 @@ export default function HomePage() {
             </div>
 
             <h1 className="font-heading text-4xl font-bold leading-tight tracking-tight text-[#102A43] sm:text-5xl lg:text-6xl">
-              Treading the globe. Seeking adventure. Exploring culture.
+              We are Zoe and Mark and we are treading the globe, seeking adventure, exploring culture, and finding words of wisdom along the way.
             </h1>
-
-            <p className="mt-5 text-lg text-[#102A43]/80">
-              We&apos;re Zoe &amp; Mark — trading the ordinary for the open road.
-            </p>
 
             {/* PLACEHOLDER: "Weekly Vlogs" is an illustrative example tag from
                 the client brief, not a verified fact — Zoe & Mark will
@@ -80,7 +72,6 @@ export default function HomePage() {
           </div>
 
           <div className="relative mx-auto w-full max-w-sm flex-shrink-0 lg:mx-0 lg:max-w-[420px]">
-            <div className="absolute -inset-3 -z-10 rounded-[2rem] bg-gradient-to-br from-[#D97706]/20 via-transparent to-[#2F5D50]/20 blur-xl" aria-hidden="true" />
             {/* eslint-disable-next-line @next/next/no-img-element -- local trusted photo, simple static asset */}
             <img
               src="/zoe-and-mark.jpg"
@@ -89,7 +80,7 @@ export default function HomePage() {
               width={3672}
               height={4896}
             />
-            <div className="absolute -bottom-4 left-4 flex items-center gap-2 rounded-full bg-[#FDFBF7] px-4 py-2 shadow-lg ring-1 ring-[#102A43]/5">
+            <div className="absolute -bottom-4 left-4 flex items-center gap-2 rounded-full bg-white px-4 py-2 shadow-lg ring-1 ring-[#102A43]/5">
               <MapPin size={16} className="text-[#D97706]" aria-hidden="true" />
               <span className="text-sm font-semibold text-[#102A43]">
                 Currently Exploring: Europe
@@ -123,7 +114,7 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="relative border-t border-[#102A43]/10 bg-[#FDFBF7]">
+      <footer className="relative border-t border-[#102A43]/10 bg-white">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-8 sm:flex-row">
           <nav className="flex flex-wrap items-center justify-center gap-5 text-sm font-medium text-[#102A43]/70">
             <Link href="/" className="hover:text-[#102A43]">Home</Link>
