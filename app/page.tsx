@@ -40,92 +40,71 @@ const SOCIALS = [
 export default function HomePage() {
   return (
     <main className="bg-white text-[#102A43]">
-      {/* Hero — fills the viewport like a proper landing page, vertically centred */}
-      <section className="mx-auto flex min-h-[88vh] max-w-7xl flex-col justify-center px-6 py-16 lg:px-10">
-        <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-20">
-          <div className="text-center lg:text-left">
-            {/* eslint-disable-next-line @next/next/no-img-element -- local trusted SVG, no need for next/image's optimizer */}
-            <img
-              src="/wwr-logo.svg"
-              alt="Wise Way Round"
-              className="mx-auto h-40 w-40 sm:h-48 sm:w-48 lg:mx-0"
-              width={192}
-              height={192}
-            />
+      {/* Full-width hero banner */}
+      <section className="relative">
+        {/* eslint-disable-next-line @next/next/no-img-element -- local trusted photo, simple static asset */}
+        <img
+          src="/wise-banner.jpg"
+          alt="Wise Way Round — on the road"
+          className="h-[32vh] w-full object-cover sm:h-[40vh] lg:h-[48vh]"
+          width={1640}
+          height={624}
+        />
 
-            <NavBar className="mt-6 lg:justify-start" />
+        <div className="absolute bottom-5 left-5 flex items-center gap-2 rounded-full bg-white/95 px-4 py-2 shadow-md backdrop-blur sm:bottom-6 sm:left-8">
+          <MapPin size={15} className="text-[#D97706]" aria-hidden="true" />
+          <span className="text-sm font-semibold text-[#102A43]">
+            Currently Exploring: Europe
+          </span>
+        </div>
+      </section>
 
-            <p className="mt-8 text-xs font-bold uppercase tracking-[0.2em] text-[#D97706]">
-              Vanlife &middot; Travel &middot; Culture
-            </p>
+      {/* Hero content */}
+      <section className="mx-auto max-w-4xl px-6 py-14 text-center lg:py-16">
+        {/* eslint-disable-next-line @next/next/no-img-element -- local trusted SVG, no need for next/image's optimizer */}
+        <img
+          src="/wwr-logo.svg"
+          alt="Wise Way Round"
+          className="mx-auto h-32 w-32 sm:h-36 sm:w-36"
+          width={144}
+          height={144}
+        />
 
-            <h1 className="mx-auto mt-4 max-w-lg font-heading text-2xl font-bold leading-[1.3] tracking-tight text-[#102A43] sm:text-[1.75rem] lg:mx-0 lg:text-3xl">
-              We are Zoe and Mark and we are treading the globe, seeking adventure, exploring culture, and finding words of wisdom along the way.
-            </h1>
+        <NavBar className="mt-6" />
 
-            {/* PLACEHOLDER: "Weekly Vlogs" is an illustrative example tag from
-                the client brief, not a verified fact — Zoe & Mark will
-                confirm/replace this later. */}
-            <div className="mt-7 flex flex-wrap justify-center gap-2.5 lg:justify-start">
-              <span className="rounded-full border border-[#102A43]/10 bg-white px-4 py-1.5 text-sm font-semibold text-[#102A43] shadow-sm">
-                Full-time Vanlifers
-              </span>
-              <span className="rounded-full border border-[#2F5D50]/15 bg-white px-4 py-1.5 text-sm font-semibold text-[#2F5D50] shadow-sm">
-                Weekly Vlogs
-              </span>
-            </div>
+        <p className="mt-8 text-xs font-bold uppercase tracking-[0.2em] text-[#D97706]">
+          Vanlife &middot; Travel &middot; Culture
+        </p>
 
-            <div className="mt-9 flex flex-wrap justify-center gap-3 lg:justify-start" aria-label="Follow us on social media">
-              {SOCIALS.map((social) => (
-                <a
-                  key={social.name}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`inline-flex items-center gap-2.5 rounded-full px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-md ${social.chip} [&_svg]:h-[18px] [&_svg]:w-[18px]`}
-                >
-                  {social.icon}
-                  {social.name}
-                </a>
-              ))}
-            </div>
-          </div>
+        <h1 className="mx-auto mt-4 max-w-2xl font-heading text-2xl font-bold leading-[1.3] tracking-tight text-[#102A43] sm:text-[1.75rem] lg:text-3xl">
+          We are Zoe and Mark and we are treading the globe, seeking adventure, exploring culture, and finding words of wisdom along the way.
+        </h1>
 
-          <div className="relative mx-auto w-full max-w-sm lg:mx-0 lg:max-w-md">
-            {/* Travel-postcard style frame: white mat, thin double rule, compass corner ticks */}
-            <div className="relative rounded-[1.75rem] bg-white p-3 shadow-[0_30px_70px_-15px_rgba(16,42,67,0.35)] sm:p-4">
-              <div className="relative rounded-[1.25rem] border-2 border-[#102A43] p-1.5">
-                <div className="relative overflow-hidden rounded-[1rem] border border-[#D97706]/40">
-                  {/* eslint-disable-next-line @next/next/no-img-element -- local trusted photo, simple static asset */}
-                  <img
-                    src="/zoe-and-mark.jpg"
-                    alt="Zoe and Mark on their travels"
-                    className="aspect-[3/4] w-full object-cover"
-                    width={3672}
-                    height={4896}
-                  />
-                </div>
+        {/* PLACEHOLDER: "Weekly Vlogs" is an illustrative example tag from
+            the client brief, not a verified fact — Zoe & Mark will
+            confirm/replace this later. */}
+        <div className="mt-7 flex flex-wrap justify-center gap-2.5">
+          <span className="rounded-full border border-[#102A43]/10 bg-white px-4 py-1.5 text-sm font-semibold text-[#102A43] shadow-sm">
+            Full-time Vanlifers
+          </span>
+          <span className="rounded-full border border-[#2F5D50]/15 bg-white px-4 py-1.5 text-sm font-semibold text-[#2F5D50] shadow-sm">
+            Weekly Vlogs
+          </span>
+        </div>
 
-                {/* Corner ticks, like a vintage postcard / map frame */}
-                <span aria-hidden="true" className="absolute -left-0.5 -top-0.5 h-4 w-4 rounded-tl-md border-l-2 border-t-2 border-[#D97706]" />
-                <span aria-hidden="true" className="absolute -right-0.5 -top-0.5 h-4 w-4 rounded-tr-md border-r-2 border-t-2 border-[#D97706]" />
-                <span aria-hidden="true" className="absolute -bottom-0.5 -left-0.5 h-4 w-4 rounded-bl-md border-b-2 border-l-2 border-[#D97706]" />
-                <span aria-hidden="true" className="absolute -bottom-0.5 -right-0.5 h-4 w-4 rounded-br-md border-b-2 border-r-2 border-[#D97706]" />
-              </div>
-
-              {/* Postcard caption strip */}
-              <p className="mt-3 text-center font-heading text-sm italic tracking-wide text-[#102A43]/70">
-                Wish you were here
-              </p>
-            </div>
-
-            <div className="absolute -bottom-4 left-6 flex items-center gap-2 rounded-full bg-white px-4 py-2 shadow-md ring-1 ring-[#102A43]/5">
-              <MapPin size={15} className="text-[#D97706]" aria-hidden="true" />
-              <span className="text-sm font-semibold text-[#102A43]">
-                Currently Exploring: Europe
-              </span>
-            </div>
-          </div>
+        <div className="mt-9 flex flex-wrap justify-center gap-3" aria-label="Follow us on social media">
+          {SOCIALS.map((social) => (
+            <a
+              key={social.name}
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`inline-flex items-center gap-2.5 rounded-full px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-md ${social.chip} [&_svg]:h-[18px] [&_svg]:w-[18px]`}
+            >
+              {social.icon}
+              {social.name}
+            </a>
+          ))}
         </div>
       </section>
 
