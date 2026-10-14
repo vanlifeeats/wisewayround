@@ -61,16 +61,7 @@ export default function HomePage() {
 
       {/* Hero content */}
       <section className="mx-auto max-w-4xl px-6 py-14 text-center lg:py-16">
-        {/* eslint-disable-next-line @next/next/no-img-element -- local trusted SVG, no need for next/image's optimizer */}
-        <img
-          src="/wwr-logo.svg"
-          alt="Wise Way Round"
-          className="mx-auto h-32 w-32 sm:h-36 sm:w-36"
-          width={144}
-          height={144}
-        />
-
-        <NavBar className="mt-6" />
+        <NavBar />
 
         <p className="mt-8 text-xs font-bold uppercase tracking-[0.2em] text-[#D97706]">
           Vanlife &middot; Travel &middot; Culture
@@ -113,7 +104,13 @@ export default function HomePage() {
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-6 px-6 py-12 sm:flex-row sm:justify-between">
           <div className="flex items-center gap-3">
             {/* eslint-disable-next-line @next/next/no-img-element -- local trusted SVG, no need for next/image's optimizer */}
-            <img src="/wwr-logo.svg" alt="" className="h-9 w-9" width={36} height={36} aria-hidden="true" />
+            <img
+              src="/wwr-logo.svg"
+              alt="Wise Way Round"
+              className="h-14 w-14"
+              width={56}
+              height={56}
+            />
             <Link href="/" className="font-heading text-base font-bold text-[#102A43]">
               Wise Way Round
             </Link>
