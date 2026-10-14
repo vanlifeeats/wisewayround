@@ -92,16 +92,34 @@ export default function HomePage() {
           </div>
 
           <div className="relative mx-auto w-full max-w-sm lg:mx-0 lg:max-w-md">
-            <div className="absolute -inset-3 -z-10 rounded-[2.25rem] border border-[#D97706]/20" aria-hidden="true" />
-            {/* eslint-disable-next-line @next/next/no-img-element -- local trusted photo, simple static asset */}
-            <img
-              src="/zoe-and-mark.jpg"
-              alt="Zoe and Mark on their travels"
-              className="w-full rounded-[2rem] object-cover shadow-[0_30px_70px_-15px_rgba(16,42,67,0.35)]"
-              width={3672}
-              height={4896}
-            />
-            <div className="absolute left-5 top-5 flex items-center gap-2 rounded-full bg-white/95 px-4 py-2 shadow-md backdrop-blur">
+            {/* Travel-postcard style frame: white mat, thin double rule, compass corner ticks */}
+            <div className="relative rounded-[1.75rem] bg-white p-3 shadow-[0_30px_70px_-15px_rgba(16,42,67,0.35)] sm:p-4">
+              <div className="relative rounded-[1.25rem] border-2 border-[#102A43] p-1.5">
+                <div className="relative overflow-hidden rounded-[1rem] border border-[#D97706]/40">
+                  {/* eslint-disable-next-line @next/next/no-img-element -- local trusted photo, simple static asset */}
+                  <img
+                    src="/zoe-and-mark.jpg"
+                    alt="Zoe and Mark on their travels"
+                    className="aspect-[3/4] w-full object-cover"
+                    width={3672}
+                    height={4896}
+                  />
+                </div>
+
+                {/* Corner ticks, like a vintage postcard / map frame */}
+                <span aria-hidden="true" className="absolute -left-0.5 -top-0.5 h-4 w-4 rounded-tl-md border-l-2 border-t-2 border-[#D97706]" />
+                <span aria-hidden="true" className="absolute -right-0.5 -top-0.5 h-4 w-4 rounded-tr-md border-r-2 border-t-2 border-[#D97706]" />
+                <span aria-hidden="true" className="absolute -bottom-0.5 -left-0.5 h-4 w-4 rounded-bl-md border-b-2 border-l-2 border-[#D97706]" />
+                <span aria-hidden="true" className="absolute -bottom-0.5 -right-0.5 h-4 w-4 rounded-br-md border-b-2 border-r-2 border-[#D97706]" />
+              </div>
+
+              {/* Postcard caption strip */}
+              <p className="mt-3 text-center font-heading text-sm italic tracking-wide text-[#102A43]/70">
+                Wish you were here
+              </p>
+            </div>
+
+            <div className="absolute -bottom-4 left-6 flex items-center gap-2 rounded-full bg-white px-4 py-2 shadow-md ring-1 ring-[#102A43]/5">
               <MapPin size={15} className="text-[#D97706]" aria-hidden="true" />
               <span className="text-sm font-semibold text-[#102A43]">
                 Currently Exploring: Europe
