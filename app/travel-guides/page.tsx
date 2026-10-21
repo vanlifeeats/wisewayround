@@ -1,15 +1,7 @@
 import Link from 'next/link'
 import { ChevronRight } from 'lucide-react'
 import { NavBar } from '@/components/NavBar'
-
-const COUNTRIES = [
-  { label: 'Italy', href: '/travel-guides/italy' },
-  { label: 'France', href: '/travel-guides/france' },
-  { label: 'Greece', href: '/travel-guides/greece' },
-  { label: 'Japan', href: '/travel-guides/japan' },
-  { label: 'USA', href: '/travel-guides/usa' },
-  { label: 'Turkey', href: '/travel-guides/turkey' },
-]
+import { TOP_LEVEL_DESTINATIONS } from '@/lib/travel-guides'
 
 export default function TravelGuidesPage() {
   return (
@@ -31,13 +23,13 @@ export default function TravelGuidesPage() {
         </p>
 
         <div className="mt-9 grid w-full gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {COUNTRIES.map((country) => (
+          {TOP_LEVEL_DESTINATIONS.map((destination) => (
             <Link
-              key={country.href}
-              href={country.href}
+              key={destination.href}
+              href={destination.href}
               className="group flex items-center justify-between rounded-xl border border-[#102A43]/10 bg-white px-5 py-4 text-left font-semibold text-[#102A43] shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:border-[#D97706]/30 hover:text-[#D97706] hover:shadow-md"
             >
-              {country.label}
+              {destination.label}
               <ChevronRight
                 size={18}
                 aria-hidden="true"

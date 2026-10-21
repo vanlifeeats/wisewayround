@@ -1,3 +1,20 @@
+export const TOP_LEVEL_DESTINATIONS: { label: string; href: string }[] = [
+  { label: 'Canada', href: '/travel-guides/canada' },
+  { label: 'Denmark', href: '/travel-guides/denmark' },
+  { label: 'France', href: '/travel-guides/france' },
+  { label: 'Germany', href: '/travel-guides/germany' },
+  { label: 'Greece', href: '/travel-guides/greece' },
+  { label: 'Italy', href: '/travel-guides/italy' },
+  { label: 'Japan', href: '/travel-guides/japan' },
+  { label: 'Portugal', href: '/travel-guides/portugal' },
+  { label: 'Puerto Rico', href: '/travel-guides/puerto-rico' },
+  { label: 'Spain', href: '/travel-guides/spain' },
+  { label: 'Thailand', href: '/travel-guides/thailand' },
+  { label: 'Turkey', href: '/travel-guides/turkey' },
+  { label: 'United Kingdom', href: '/travel-guides/united-kingdom' },
+  { label: 'USA', href: '/travel-guides/usa' },
+]
+
 export const ITALY_REGIONS: { label: string; href: string }[] = [
   { label: 'Turin', href: '/travel-guides/italy/turin' },
   { label: 'Milan and the Lakes', href: '/travel-guides/italy/milan-and-the-lakes' },

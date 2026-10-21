@@ -1,19 +1,11 @@
 import Link from 'next/link'
 import { ChevronDown } from 'lucide-react'
+import { TOP_LEVEL_DESTINATIONS } from '@/lib/travel-guides'
 
 const NAV_LINKS = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
   { label: 'Work With Us', href: '/work-with-us' },
-]
-
-const TRAVEL_GUIDE_COUNTRIES = [
-  { label: 'Italy', href: '/travel-guides/italy' },
-  { label: 'France', href: '/travel-guides/france' },
-  { label: 'Greece', href: '/travel-guides/greece' },
-  { label: 'Japan', href: '/travel-guides/japan' },
-  { label: 'USA', href: '/travel-guides/usa' },
-  { label: 'Turkey', href: '/travel-guides/turkey' },
 ]
 
 const ESCAPE_CATEGORIES = [
@@ -52,16 +44,18 @@ export function NavBar({ className = '' }: { className?: string }) {
           />
         </summary>
 
-        <div className="absolute left-1/2 top-full z-10 mt-2 w-48 -translate-x-1/2 rounded-xl border border-[#102A43]/10 bg-white p-2 shadow-md">
-          {TRAVEL_GUIDE_COUNTRIES.map((country) => (
-            <Link
-              key={country.href}
-              href={country.href}
-              className="block rounded-lg px-3 py-2 text-left text-xs font-bold uppercase tracking-[0.1em] text-[#102A43]/70 transition-colors duration-300 ease-in-out hover:bg-[#D97706]/10 hover:text-[#D97706]"
-            >
-              {country.label}
-            </Link>
-          ))}
+        <div className="absolute left-1/2 top-full z-10 mt-2 w-[22rem] max-w-[90vw] max-h-[70vh] -translate-x-1/2 overflow-y-auto rounded-xl border border-[#102A43]/10 bg-white p-2 shadow-md">
+          <div className="grid grid-cols-2 gap-0.5">
+            {TOP_LEVEL_DESTINATIONS.map((destination) => (
+              <Link
+                key={destination.href}
+                href={destination.href}
+                className="block rounded-lg px-3 py-2 text-left text-xs font-bold uppercase tracking-[0.1em] text-[#102A43]/70 transition-colors duration-300 ease-in-out hover:bg-[#D97706]/10 hover:text-[#D97706]"
+              >
+                {destination.label}
+              </Link>
+            ))}
+          </div>
         </div>
       </details>
 
