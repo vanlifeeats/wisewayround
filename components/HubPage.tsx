@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { ChevronRight } from 'lucide-react'
 import { NavBar } from '@/components/NavBar'
+import { HeroImage } from '@/components/HeroImage'
 
 export function HubPage({
   eyebrow,
@@ -9,6 +10,9 @@ export function HubPage({
   items,
   backHref,
   backLabel,
+  heroImage,
+  heroImageAlt,
+  heroImageCredit,
 }: {
   eyebrow: string
   title: string
@@ -16,6 +20,9 @@ export function HubPage({
   items: { label: string; href: string }[]
   backHref: string
   backLabel: string
+  heroImage?: string
+  heroImageAlt?: string
+  heroImageCredit?: { name: string; profileUrl: string }
 }) {
   return (
     <main className="flex min-h-screen flex-col bg-white text-[#102A43]">
@@ -24,6 +31,12 @@ export function HubPage({
         <img src="/wwr-logo.svg" alt="Wise Way Round" className="h-28 w-28" width={112} height={112} />
 
         <NavBar className="mt-6" />
+
+        {heroImage && (
+          <div className="mt-8 w-full">
+            <HeroImage src={heroImage} alt={heroImageAlt ?? title} credit={heroImageCredit} />
+          </div>
+        )}
 
         <p className="mt-10 text-xs font-bold uppercase tracking-[0.2em] text-[#D97706]">
           {eyebrow}

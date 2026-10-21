@@ -31,6 +31,8 @@ export interface DestinationData {
   heroImage?: string
   /** Human-written alt text for `heroImage`, authored alongside it (never derived from the image path/filename). */
   heroImageAlt?: string
+  /** Populated by scripts/fetch-travel-guide-images.ts; profileUrl already carries Unsplash's required utm_source/utm_medium params. */
+  heroImageCredit?: { name: string; profileUrl: string }
   /** Chapter-level "Planning links" block (near-universal across chapters), distinct from venue links: these
    *  are practical/official links, not tied to a single venue. */
   planningLinks?: { label: string; href: string }[]

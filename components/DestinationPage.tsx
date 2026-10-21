@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { ExternalLink, Globe, MapPin } from 'lucide-react'
 import { NavBar } from '@/components/NavBar'
+import { HeroImage } from '@/components/HeroImage'
 import type { DestinationData, Venue } from '@/lib/travel-guides/types'
 
 const DISCLAIMER =
@@ -53,6 +54,12 @@ export function DestinationPage({
         <img src="/wwr-logo.svg" alt="Wise Way Round" className="h-28 w-28" width={112} height={112} />
 
         <NavBar className="mt-6" />
+
+        {data.heroImage && (
+          <div className="mt-8 w-full">
+            <HeroImage src={data.heroImage} alt={data.heroImageAlt ?? data.name} credit={data.heroImageCredit} />
+          </div>
+        )}
 
         <div className="mt-10 flex flex-col items-center text-center">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#D97706]">
