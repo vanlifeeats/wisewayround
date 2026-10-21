@@ -12,3 +12,19 @@ export const ITALY_REGIONS: { label: string; href: string }[] = [
   { label: 'Sardinia', href: '/travel-guides/italy/sardinia' },
   { label: 'Lakes and Beaches', href: '/travel-guides/italy/lakes-and-beaches' },
 ]
+
+export const USA_CITIES: { label: string; href: string }[] = [
+  { label: 'New York City', href: '/travel-guides/usa/new-york-city' },
+  { label: 'New Haven', href: '/travel-guides/usa/new-haven' },
+  { label: 'New Orleans', href: '/travel-guides/usa/new-orleans' },
+  { label: 'Miami and Miami Beach', href: '/travel-guides/usa/miami-and-miami-beach' },
+  { label: 'Austin', href: '/travel-guides/usa/austin' },
+  { label: 'Los Angeles', href: '/travel-guides/usa/los-angeles' },
+  { label: 'Philadelphia', href: '/travel-guides/usa/philadelphia' },
+  { label: 'Pittsburgh', href: '/travel-guides/usa/pittsburgh' },
+]
+
+export const TURKEY_CITIES: { label: string; href: string }[] = [
+  { label: 'Istanbul', href: '/travel-guides/turkey/istanbul' },
+  { label: 'Gaziantep', href: '/travel-guides/turkey/gaziantep' },
+]
