@@ -3,9 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'italy-lakes-and-beaches',
   name: 'Lakes and Beaches',
-  heroImage: 'https://images.unsplash.com/photo-1586974726316-c6302de6a160?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8SXRhbGlhbiUyMGxha2UlMjBsYW5kc2NhcGV8ZW58MHwwfHx8MTc5MjU5NzYyOHww&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImage: 'https://images.unsplash.com/photo-1563126342-d8f10176661b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8TGFrZSUyMEJyYWNjaWFubyUyMFJvbWUlMjBJdGFseXxlbnwwfDB8fHwxNzkyNTk5MzM4fDA&ixlib=rb-4.1.0&q=80&w=1080',
   heroImageAlt: 'A lake in the Italian countryside near Rome',
-  heroImageCredit: { name: 'Lewis J Goetz', profileUrl: 'https://unsplash.com/@lgoetz?utm_source=wisewayround&utm_medium=referral' },
+  heroImageCredit: { name: 'Robert Anitei', profileUrl: 'https://unsplash.com/@speedyroby?utm_source=wisewayround&utm_medium=referral' },
   tagline: 'Day-trip lakes near Rome and ten beaches worth the journey.',
   intro: [
     'This chapter steps away from restaurant directories to cover ten beaches across the country worth a special trip, plus five lakes close enough to Rome for a day out, each with its own suggested accommodation or practical travel notes.',

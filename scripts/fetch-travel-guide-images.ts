@@ -64,7 +64,7 @@ const LEAF_ENTRIES: LeafEntry[] = [
   { kind: 'leaf', slug: 'italy-puglia', name: 'Puglia', tagline: 'Bari, the Itria Valley and Salento', query: 'Puglia Italy travel' },
   { kind: 'leaf', slug: 'italy-sicily', name: 'Sicily', tagline: 'Palermo, Ortigia and the south-east', query: 'Palermo Sicily Italy' },
   { kind: 'leaf', slug: 'italy-sardinia', name: 'Sardinia', tagline: 'Cagliari and the south of the island', query: 'Cagliari Sardinia Italy' },
-  { kind: 'leaf', slug: 'italy-lakes-and-beaches', name: 'Lakes and Beaches', tagline: 'day-trip lakes near Rome and ten beaches', query: 'Italian lake landscape' },
+  { kind: 'leaf', slug: 'italy-lakes-and-beaches', name: 'Lakes and Beaches', tagline: 'day-trip lakes near Rome and ten beaches', query: 'Lake Bracciano Rome Italy', fallbackQuery: 'Italian beach coast' },
   { kind: 'leaf', slug: 'usa-new-york-city', name: 'New York City', tagline: 'Manhattan, Brooklyn, Queens', query: 'New York City skyline' },
   { kind: 'leaf', slug: 'usa-new-haven', name: 'New Haven', tagline: 'Yale and the Green', query: 'New Haven Yale Connecticut' },
   { kind: 'leaf', slug: 'usa-new-orleans', name: 'New Orleans', tagline: 'a food-focused visit', query: 'New Orleans French Quarter' },
