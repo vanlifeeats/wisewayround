@@ -5,3 +5,6 @@ node_modules/
 .next/
 next-env.d.ts
 *.tsbuildinfo
+.agents/
+public/world-guide-001.pdf
+public/italy-guides-with-links.pdf
