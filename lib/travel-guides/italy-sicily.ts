@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'italy-sicily',
   name: 'Sicily',
+  heroImage: 'https://images.unsplash.com/photo-1598717475893-e4d14de42bca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8UGFsZXJtbyUyMFNpY2lseSUyMEl0YWx5fGVufDB8MHx8fDE3OTI1OTc2MjR8MA&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'A street in Palermo, Sicily',
+  heroImageCredit: { name: 'Henrique Ferreira', profileUrl: 'https://unsplash.com/@rickpsd?utm_source=wisewayround&utm_medium=referral' },
   tagline: 'Palermo, Ortigia and the south-east, with sweets, street food and island stays.',
   intro: [
     "A good visit splits time between Ortigia's dinner-and-drinks scene, Palermo's street food and pastry traditions, and a wider loop through the south-east and the islands for places to stay.",

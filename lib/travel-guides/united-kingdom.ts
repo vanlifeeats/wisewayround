@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'united-kingdom',
   name: 'United Kingdom',
+  heroImage: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8TG9uZG9uJTIwRW5nbGFuZCUyMHRyYXZlbHxlbnwwfDB8fHwxNzkyNTk3NjAyfDA&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'A London street scene in the United Kingdom',
+  heroImageCredit: { name: 'Benjamin Davies', profileUrl: 'https://unsplash.com/@bendavisual?utm_source=wisewayround&utm_medium=referral' },
   tagline: "London's directory is organised around restaurants, food markets, independent retailers and pubs, spread wide enough that neighbourhood planning matters more than the length of the shortlist.",
   intro: [
     'Commercial Street and Calvert Avenue form useful east-London anchors, Borough Market and Bermondsey support a separate food-shopping outing, and Soho holds several restaurant and bar addresses on its own — Camberwell, Dalston and Paddington are each worth treating as distinct journeys rather than bolt-ons.',

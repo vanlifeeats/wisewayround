@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'puerto-rico',
   name: 'Puerto Rico',
+  heroImage: 'https://images.unsplash.com/photo-1599943503164-2dcaab73121a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8VmllcXVlcyUyMFB1ZXJ0byUyMFJpY28lMjBiZWFjaHxlbnwwfDB8fHwxNzkyNTk3NTk2fDA&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'A beach on the island of Vieques, Puerto Rico',
+  heroImageCredit: { name: 'Ana Toledo', profileUrl: 'https://unsplash.com/@alt22?utm_source=wisewayround&utm_medium=referral' },
   tagline: "Vieques is an island municipality off Puerto Rico's eastern coast.",
   intro: [
     'Beach visits, nature and dining in Esperanza can be combined into a stay that leaves enough time for the island transfer and local transport. Current visitor guidance identifies flights from San Juan and ferries from Ceiba — the mainland ferry port should not be confused with Fajardo, and it is worth confirming the actual sailing, baggage rules and onward transfer before booking.',

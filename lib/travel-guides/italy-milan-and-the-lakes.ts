@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'italy-milan-and-the-lakes',
   name: 'Milan and the Lakes',
+  heroImage: 'https://images.unsplash.com/photo-1586974726316-c6302de6a160?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8TGFrZSUyMENvbW8lMjBJdGFseXxlbnwwfDB8fHwxNzkyNTk3NjA3fDA&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'Lake Como, near Milan in northern Italy',
+  heroImageCredit: { name: 'Lewis J Goetz', profileUrl: 'https://unsplash.com/@lgoetz?utm_source=wisewayround&utm_medium=referral' },
   tagline: "Lombardy's capital and the lakeside restaurants of Lake Como.",
   intro: [
     'A good visit pairs a few of Milan\'s own addresses with a day or two by the lake, where fish fresh from the water and mountain-style cooking are the draw.',

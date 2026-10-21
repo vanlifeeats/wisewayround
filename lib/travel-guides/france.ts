@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'france',
   name: 'France',
+  heroImage: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8UGFyaXMlMjBGcmFuY2UlMjBFaWZmZWwlMjBUb3dlcnxlbnwwfDB8fHwxNzkyNTk3NTg1fDA&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'The Eiffel Tower rising over the rooftops of Paris, France',
+  heroImageCredit: { name: 'Chris Karidis', profileUrl: 'https://unsplash.com/@chriskaridis?utm_source=wisewayround&utm_medium=referral' },
   tagline:
     'Paris pairs a concentrated historic centre with a dining scene that reaches well beyond the main monuments.',
   intro: [

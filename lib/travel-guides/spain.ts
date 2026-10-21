@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'spain',
   name: 'Spain',
+  heroImage: 'https://images.unsplash.com/photo-1593368858664-a7fe556ab936?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8QmFyY2Vsb25hJTIwU3BhaW4lMjB0cmF2ZWx8ZW58MHwwfHx8MTc5MjU5NzU5OHww&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'A market street in Barcelona, Spain',
+  heroImageCredit: { name: 'D Jonez', profileUrl: 'https://unsplash.com/@cooljonez?utm_source=wisewayround&utm_medium=referral' },
   tagline: "Barcelona's food addresses range from neighbourhood markets and bakeries to counter dining and seafront rice restaurants.",
   intro: [
     'Markets are especially useful here for combining food shopping with an informal meal. Barceloneta has a municipal market, tapas addresses and bread shopping; El Born provides a second dining cluster; and the food counters inside La Boqueria are worth distinguishing from stand-alone restaurants elsewhere in the city.',

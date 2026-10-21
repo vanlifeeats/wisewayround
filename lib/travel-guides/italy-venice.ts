@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'italy-venice',
   name: 'Venice',
+  heroImage: 'https://images.unsplash.com/photo-1504843812413-16480b674871?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8VmVuaWNlJTIwSXRhbHklMjBjYW5hbHN8ZW58MHwwfHx8MTc5MjU5NzYwOXww&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'Canals and bridges across Venice, Italy',
+  heroImageCredit: { name: 'Elisha Terada', profileUrl: 'https://unsplash.com/@elishaterada?utm_source=wisewayround&utm_medium=referral' },
   tagline: 'Restaurants, bacari, cafés and sweets across the lagoon city and its islands.',
   intro: [
     'A good visit mixes a bacaro crawl of small bites and wine with a few proper sit-down meals, leaving room for a side trip to Burano or Mazzorbo and a stop for something cold along the way.',

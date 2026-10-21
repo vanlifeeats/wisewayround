@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'italy-sardinia',
   name: 'Sardinia',
+  heroImage: 'https://images.unsplash.com/photo-1593075356257-252c29b02ce8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8Q2FnbGlhcmklMjBTYXJkaW5pYSUyMEl0YWx5fGVufDB8MHx8fDE3OTI1OTc2MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'The coastline near Cagliari, Sardinia',
+  heroImageCredit: { name: 'Laura Lugaresi', profileUrl: 'https://unsplash.com/@lauralugaresi?utm_source=wisewayround&utm_medium=referral' },
   tagline: 'Dining in Cagliari and the south of the island.',
   intro: [
     'A good visit centres on Cagliari for special-occasion dinners and modern Sardinian cooking, with short drives out to seafood restaurants and an agriturismo along the coast.',

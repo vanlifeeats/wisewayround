@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'canada',
   name: 'Canada',
+  heroImage: 'https://images.unsplash.com/photo-1677791267383-df800fe824f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8TW9udHJlYWwlMjBDYW5hZGElMjB0cmF2ZWx8ZW58MHwwfHx8MTc5MjU5NzU4MHww&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'A street scene in Montreal, Canada',
+  heroImageCredit: { name: 'Asael Peña', profileUrl: 'https://unsplash.com/@asaelamaury?utm_source=wisewayround&utm_medium=referral' },
   tagline: 'Montréal adds a Canadian section built around a small, operator-confirmed directory.',
   intro: [
     'Food shopping, a restaurant meal and neighbourhood walking can be combined here without treating the city as a list of tasting-menu reservations. The official visitor guide describes a metro and bus network, walking routes and seasonal cycling choices, and the Old Port, Little Italy and Plateau each offer a different area to explore — worth checking current service and the weather before committing to a long walking or cycling day.',

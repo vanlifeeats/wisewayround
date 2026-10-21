@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'italy-florence-and-tuscany',
   name: 'Florence and Tuscany',
+  heroImage: 'https://images.unsplash.com/photo-1611953769882-234c1e8e459c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8RmxvcmVuY2UlMjBUdXNjYW55JTIwSXRhbHl8ZW58MHwwfHx8MTc5MjU5NzYxM3ww&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'The rooftops of Florence above the Tuscan countryside',
+  heroImageCredit: { name: 'Joshua Kettle', profileUrl: 'https://unsplash.com/@joshuakettle?utm_source=wisewayround&utm_medium=referral' },
   tagline: 'Steak, trattorie, sandwiches, cafés and wine in Florence, with places to eat and stay in the Sienese countryside.',
   intro: [
     "A good visit starts with Florence's panino tradition, then works through its steak houses, traditional trattorie and coffee shops before venturing out towards Siena and the Val d'Orcia countryside.",

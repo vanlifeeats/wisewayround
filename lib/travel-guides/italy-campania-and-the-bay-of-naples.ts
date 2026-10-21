@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'italy-campania-and-the-bay-of-naples',
   name: 'Campania and the Bay of Naples',
+  heroImage: 'https://images.unsplash.com/photo-1688229394127-4aca1b1d13d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8QW1hbGZpJTIwQ29hc3QlMjBOYXBsZXMlMjBJdGFseXxlbnwwfDB8fHwxNzkyNTk3NjIwfDA&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'The Amalfi Coast overlooking the Bay of Naples',
+  heroImageCredit: { name: 'Matteo Eria', profileUrl: 'https://unsplash.com/@matteo_eria?utm_source=wisewayround&utm_medium=referral' },
   tagline: 'Pizza in Naples, the Amalfi Coast table and Procida.',
   intro: [
     'Naples itself is worth treating as a pizza-first destination, with everything else — delis, old-school osterias and a champagne surprise — fitted in around it, before heading out to the Amalfi Coast, Cetara, Praiano and Procida for seafood, and inland to Cilento and Irpinia for farms and wine.',

@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'usa-pittsburgh',
   name: 'Pittsburgh',
+  heroImage: 'https://images.unsplash.com/photo-1555424221-250de2a343ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8UGl0dHNidXJnaCUyMHNreWxpbmV8ZW58MHwwfHx8MTc5MjU5ODcxNXww&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'The skyline of Pittsburgh at the meeting of its rivers',
+  heroImageCredit: { name: 'Vidar Nordli-Mathisen', profileUrl: 'https://unsplash.com/@vidarnm?utm_source=wisewayround&utm_medium=referral' },
   tagline: 'Chinese cooking, sourdough pizza and Italian-influenced restaurants across different neighbourhoods.',
   intro: [
     "Downtown is compact, but the Strip District and Lawrenceville addresses give separate anchors for food outings, and a Squirrel Hill restaurant is worth planning with its own transfer rather than assuming a single walking circuit covers everything.",

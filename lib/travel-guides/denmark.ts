@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'denmark',
   name: 'Denmark',
+  heroImage: 'https://images.unsplash.com/photo-1551651767-d5ffbdd04b83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8Q29wZW5oYWdlbiUyMERlbm1hcmslMjB0cmF2ZWx8ZW58MHwwfHx8MTc5MjU5NzU4M3ww&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'Colourful waterfront buildings in Copenhagen, Denmark',
+  heroImageCredit: { name: 'Ava Coploff', profileUrl: 'https://unsplash.com/@avaluria?utm_source=wisewayround&utm_medium=referral' },
   tagline: "Copenhagen's directory is compact enough to build a trip around a few distinct experiences: a bakery visit, Danish open sandwiches, wine shopping and a separately planned destination meal.",
   intro: [
     'Metro, trains, buses and harbour buses form the public-transport network; the metro runs through the night, although maintenance can affect service. The official journey planner and transport guide are more reliable than a fixed timetable printed anywhere else.',

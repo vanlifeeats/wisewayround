@@ -1,5 +1,6 @@
 import { HubPage } from '@/components/HubPage'
 import { USA_CITIES } from '@/lib/travel-guides'
+import { HUB_HERO_IMAGES } from '@/lib/travel-guides/hub-hero-images'
 
 export default function UsaTravelGuidePage() {
   return (
@@ -10,6 +11,9 @@ export default function UsaTravelGuidePage() {
       items={USA_CITIES}
       backHref="/travel-guides"
       backLabel="Back to Travel Guides"
+      heroImage={HUB_HERO_IMAGES.usa.url}
+      heroImageAlt={HUB_HERO_IMAGES.usa.alt}
+      heroImageCredit={HUB_HERO_IMAGES.usa.credit}
     />
   )
 }

@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'greece',
   name: 'Greece',
+  heroImage: 'https://images.unsplash.com/photo-1603565816030-6b389eeb23cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8QXRoZW5zJTIwQWNyb3BvbGlzJTIwR3JlZWNlfGVufDB8MHx8fDE3OTI1OTc1ODl8MA&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'The Acropolis overlooking Athens, Greece',
+  heroImageCredit: { name: 'Constantinos Kollias', profileUrl: 'https://unsplash.com/@ckollias?utm_source=wisewayround&utm_medium=referral' },
   tagline: 'This guide covers Athens, Iraklia and Sifnos rather than claiming to cover the whole of Greece.',
   intro: [
     'The city and the islands need different kinds of planning: Athens works well by neighbourhood, while island visits depend on ferry schedules and seasonal services. In Athens, Plaka, Koukaki and Monastiraki form useful historic-centre areas, while Exarchia offers cafes and bookshops and Pangrati and other residential districts provide alternatives beyond the main monument circuit.',

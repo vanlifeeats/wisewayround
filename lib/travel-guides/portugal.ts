@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'portugal',
   name: 'Portugal',
+  heroImage: 'https://images.unsplash.com/photo-1501927023255-9063be98970c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8TGlzYm9uJTIwUG9ydHVnYWwlMjB0cmF2ZWx8ZW58MHwwfHx8MTc5MjU5NzU5NHww&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'Tiled rooftops along the Tagus estuary in Lisbon, Portugal',
+  heroImageCredit: { name: 'Liam McKay', profileUrl: 'https://unsplash.com/@liammckay?utm_source=wisewayround&utm_medium=referral' },
   tagline: 'Lisbon sits on the Tagus estuary, with a food scene that spans everyday restaurants, pastry shops, bars and one more formal dining option.',
   intro: [
     "Meal planning here doesn't need to rely on a single style of place. Belém is a separate excursion from the central restaurant addresses, and Campo de Ourique offers another distinct dining area — it works best to build the day around one area, then keep the second meal flexible rather than crossing the city repeatedly.",

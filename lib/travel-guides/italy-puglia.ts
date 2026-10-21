@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'italy-puglia',
   name: 'Puglia',
+  heroImage: 'https://images.unsplash.com/photo-1583395838204-5edc945b2194?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8UHVnbGlhJTIwSXRhbHklMjB0cmF2ZWx8ZW58MHwwfHx8MTc5MjU5NzYyMnww&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'The whitewashed streets of Puglia, southern Italy',
+  heroImageCredit: { name: 'Mattia Bericchia', profileUrl: 'https://unsplash.com/@mattiabericchia?utm_source=wisewayround&utm_medium=referral' },
   tagline: 'Bari, the Itria Valley and Salento, from street snacks to seaside dining.',
   intro: [
     'A good visit moves through three distinct areas — Salento in the far south, central Puglia around the Itria Valley and Bari itself — each with its own pace, from leisurely coastal lunches to a weekend of street food and quick restaurant stops in the city.',

@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'italy-umbria',
   name: 'Umbria',
+  heroImage: 'https://images.unsplash.com/photo-1531492471997-e4dd426216b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8QXNzaXNpJTIwVW1icmlhJTIwSXRhbHl8ZW58MHwwfHx8MTc5MjU5ODcwMXww&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'A hill town in the Umbrian countryside',
+  heroImageCredit: { name: 'Lachlan Gowen', profileUrl: 'https://unsplash.com/@lachlangowen?utm_source=wisewayround&utm_medium=referral' },
   tagline: 'Perugia, Todi and the road between the hill towns, with cellars and oil mills.',
   intro: [
     'A good visit is built around driving the hill towns — Montefalco, Spello, Trevi, Bevagna, Cannara, Orvieto and the Lake Trasimeno area — stopping for truffle-led meals, wineries and oil mills along the way, before settling into Todi and Perugia for a few days each.',

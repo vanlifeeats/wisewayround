@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'italy-turin',
   name: 'Turin',
+  heroImage: 'https://images.unsplash.com/photo-1610651219730-6b580d616e72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8VHVyaW4lMjBJdGFseSUyMHRyYXZlbHxlbnwwfDB8fHwxNzkyNTk3NjA0fDA&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'Arcaded streets in Turin, Piedmont\'s capital',
+  heroImageCredit: { name: 'Fabio Fistarol', profileUrl: 'https://unsplash.com/@fabiofistarol?utm_source=wisewayround&utm_medium=referral' },
   tagline: "Piedmont's capital, covered through its traditional dining rooms, modern kitchens, cafés and gelaterie.",
   intro: [
     'A good visit mixes long-standing piole and classic Piedmontese dining rooms with newer creative kitchens, cafes and gelaterie, rather than sticking to one style of meal for the whole trip.',

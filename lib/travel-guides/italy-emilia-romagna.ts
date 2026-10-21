@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'italy-emilia-romagna',
   name: 'Emilia-Romagna',
+  heroImage: 'https://images.unsplash.com/photo-1635469019177-7264fc1e013c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8Qm9sb2duYSUyMEl0YWx5JTIwdHJhdmVsfGVufDB8MHx8fDE3OTI1OTc2MTF8MA&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'A street in Bologna, Emilia-Romagna',
+  heroImageCredit: { name: 'Petr Slováček', profileUrl: 'https://unsplash.com/@grwood?utm_source=wisewayround&utm_medium=referral' },
   tagline: "Bologna, Modena and Parma: the cooking of Italy's richest food region.",
   intro: [
     'A good visit splits time between Parma for ham, tortelli and wine, and Bologna for its classic trattorie, delis and markets, with a short detour to Modena for Lambrusco, balsamic vinegar and a tasting-menu splurge.',

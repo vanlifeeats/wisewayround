@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'thailand',
   name: 'Thailand',
+  heroImage: 'https://images.unsplash.com/photo-1563492065599-3520f775eeed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8QmFuZ2tvayUyMFRoYWlsYW5kJTIwdHJhdmVsfGVufDB8MHx8fDE3OTI1OTc2MDB8MA&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'A street scene in Bangkok, Thailand',
+  heroImageCredit: { name: 'Alejandro Cartagena 🇲🇽🏳‍🌈', profileUrl: 'https://unsplash.com/@cartayen?utm_source=wisewayround&utm_medium=referral' },
   tagline: 'Bangkok adds a Southeast Asian section with operator-confirmed restaurant options, from a multi-branch Thai dining business to booked tasting-menu restaurants.',
   intro: [
     "The Thai government's transport overview distinguishes BTS Skytrain, MRT, buses, taxis and other modes, though the overview itself is older, so its quoted fares and operating hours are not carried into this guide — worth using current operator information for the journey.",

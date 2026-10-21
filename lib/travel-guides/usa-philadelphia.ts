@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'usa-philadelphia',
   name: 'Philadelphia',
+  heroImage: 'https://images.unsplash.com/photo-1569761316261-9a8696fa2ca3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8UGhpbGFkZWxwaGlhJTIwc2t5bGluZXxlbnwwfDB8fHwxNzkyNTk4NzEzfDA&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'The city skyline of Philadelphia',
+  heroImageCredit: { name: 'ActionVance', profileUrl: 'https://unsplash.com/@actionvance?utm_source=wisewayround&utm_medium=referral' },
   tagline: 'From a sandwich shop to supper-club dining and pasta, with access rules worth checking first.',
   intro: [
     "Center City's street grid supports walking, with SEPTA and other transport choices covering longer trips — worth settling on a main dining area and using the current visitor transport guide for the connection.",

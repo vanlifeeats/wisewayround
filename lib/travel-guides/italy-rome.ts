@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'italy-rome',
   name: 'Rome',
+  heroImage: 'https://images.unsplash.com/photo-1552832230-c0197dd311b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8Um9tZSUyMEl0YWx5JTIwQ29sb3NzZXVtfGVufDB8MHx8fDE3OTI1OTc2MTh8MA&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'Rooftops and streets in Rome, Italy',
+  heroImageCredit: { name: 'David Köhler', profileUrl: 'https://unsplash.com/@davidkhlr?utm_source=wisewayround&utm_medium=referral' },
   tagline: 'Eating, drinking and shopping in the capital, neighbourhood by neighbourhood.',
   intro: [
     "Rome rewards treating vintage shopping, homeware and antiques, food shopping and markets, and eating by neighbourhood as separate outings rather than one packed day. A good visit also leaves room for a pizzeria crawl, a gelato tour and the city's granita, grattachecca and cremolato traditions.",

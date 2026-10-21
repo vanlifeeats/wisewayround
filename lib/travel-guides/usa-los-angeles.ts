@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'usa-los-angeles',
   name: 'Los Angeles',
+  heroImage: 'https://images.unsplash.com/flagged/photo-1575555201693-7cd442b8023f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8TG9zJTIwQW5nZWxlcyUyMENhbGlmb3JuaWElMjB0cmF2ZWx8ZW58MHwwfHx8MTc5MjU5ODcxMXww&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'A view across Los Angeles, California',
+  heroImageCredit: { name: 'Cedric Letsch', profileUrl: 'https://unsplash.com/@cedricletsch?utm_source=wisewayround&utm_medium=referral' },
   tagline: 'Sandwiches, Thai and Sichuan cooking, pizza, tacos and a Japanese grocery store, well beyond downtown.',
   intro: [
     "Addresses here extend beyond a compact downtown area and include Arcadia — Chengdu Impression is in Arcadia, and Mitsuwa's linked Santa Monica-labelled branch is actually on South Centinela Avenue, distinctions worth keeping in mind since broad city labels can conceal a significant transfer.",

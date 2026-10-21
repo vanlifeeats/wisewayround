@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'usa-new-haven',
   name: 'New Haven',
+  heroImage: 'https://images.unsplash.com/photo-1723721198216-ecb4b6f2f4bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8TmV3JTIwSGF2ZW4lMjBZYWxlJTIwQ29ubmVjdGljdXR8ZW58MHwwfHx8MTc5MjU5NzYzM3ww&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'Yale University\'s campus in New Haven, Connecticut',
+  heroImageCredit: { name: 'Richard Liu', profileUrl: 'https://unsplash.com/@rstarg?utm_source=wisewayround&utm_medium=referral' },
   tagline: 'Yale, the Green and apizza make a compact city visit.',
   intro: [
     "A campus visit and one principal pizza meal make a workable day, with a second stop on another neighbourhood or a downtown drink rather than a repeated full meal. Apizza is the local pizza format — select the New Haven branch when using a chain's own location directory, and leave room for queueing rather than ordering more than practical just to compare several places in one afternoon.",

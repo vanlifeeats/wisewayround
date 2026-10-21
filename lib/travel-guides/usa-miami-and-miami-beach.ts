@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'usa-miami-and-miami-beach',
   name: 'Miami and Miami Beach',
+  heroImage: 'https://images.unsplash.com/photo-1589083130544-0d6a2926e519?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8TWlhbWklMjBCZWFjaCUyMEZsb3JpZGF8ZW58MHwwfHx8MTc5MjU5ODcwNnww&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'The beachfront in Miami Beach, Florida',
+  heroImageCredit: { name: 'Antonio Cuellar', profileUrl: 'https://unsplash.com/@antoniocphoto?utm_source=wisewayround&utm_medium=referral' },
   tagline: 'Two distinct planning areas — mainland dining and a deliberately scheduled beach outing.',
   intro: [
     "Miami and Miami Beach work best treated as separate areas rather than one walkable centre. The directory contains a seafood and fish-market business, Cuban cooking on Southwest 8th Street and a Miami Beach seafood restaurant — different food experiences best organised by location rather than assumed to sit near one another.",

@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'turkey-gaziantep',
   name: 'Gaziantep',
+  heroImage: 'https://images.unsplash.com/photo-1662047159388-f5954f2dc592?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8R2F6aWFudGVwJTIwVHVya2V5JTIwYmF6YWFyfGVufDB8MHx8fDE3OTI1OTg3MjB8MA&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'A bazaar street in Gaziantep, Turkey',
+  heroImageCredit: { name: 'Ozkan Guner', profileUrl: 'https://unsplash.com/@dentistozkanguner?utm_source=wisewayround&utm_medium=referral' },
   tagline: 'Food traditions, bazaars and the Zeugma Mosaic Museum — a deliberately short, operator-confirmed directory.',
   intro: [
     "The city's visitor information highlights bazaars, historic streets and the Zeugma mosaics, and a museum visit offers a useful counterbalance to a food-focused programme — museum admission, opening hours and access are worth reading from the official museum page before arrival.",

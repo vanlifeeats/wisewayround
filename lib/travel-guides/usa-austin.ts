@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'usa-austin',
   name: 'Austin',
+  heroImage: 'https://images.unsplash.com/photo-1557335200-a65f7f032602?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8QXVzdGluJTIwVGV4YXMlMjBza3lsaW5lfGVufDB8MHx8fDE3OTI1OTg3MDh8MA&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'The downtown skyline of Austin, Texas',
+  heroImageCredit: { name: 'MJ Tangonan', profileUrl: 'https://unsplash.com/@mjtangonan?utm_source=wisewayround&utm_medium=referral' },
   tagline: 'Pizza, barbecue and Mexican food alongside a wider city visit.',
   intro: [
     'Official visitor maps separate Downtown, South Congress, Lady Bird Lake, Zilker Park and the wider region — choosing one area as the day\'s anchor and adding food nearby works better than planning unrelated cross-city stops. Bufalina and Bufalina Due sit at different addresses, so it is worth selecting the intended location before booking or travelling.',

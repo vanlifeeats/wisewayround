@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'usa-new-york-city',
   name: 'New York City',
+  heroImage: 'https://images.unsplash.com/photo-1496588152823-86ff7695e68f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8TmV3JTIwWW9yayUyMENpdHklMjBza3lsaW5lfGVufDB8MHx8fDE3OTI1OTc2MzF8MA&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'The Manhattan skyline in New York City',
+  heroImageCredit: { name: 'Luca Bravo', profileUrl: 'https://unsplash.com/@lucabravo?utm_source=wisewayround&utm_medium=referral' },
   tagline: 'Manhattan, Brooklyn, Queens and a Jersey City side trip, from bagels to tasting menus.',
   intro: [
     'New York works best by neighbourhood cluster — the West Village, Lower East Side, Williamsburg, Greenpoint and Queens each support a distinct outing of their own, and a Brooklyn address should never be mistaken for a Manhattan branch of the same business. Jersey City sits outside New York City proper and is worth treating as a separate excursion rather than folding into a single day.',

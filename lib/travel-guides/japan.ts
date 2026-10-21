@@ -3,6 +3,9 @@ import type { DestinationData } from '@/lib/travel-guides/types'
 export const data: DestinationData = {
   slug: 'japan',
   name: 'Japan',
+  heroImage: 'https://images.unsplash.com/photo-1513407030348-c983a97b98d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTA5MjUyfDB8MXxzZWFyY2h8MXx8VG9reW8lMjBKYXBhbiUyMHRyYXZlbHxlbnwwfDB8fHwxNzkyNTk3NTkyfDA&ixlib=rb-4.1.0&q=80&w=1080',
+  heroImageAlt: 'A busy street scene in Tokyo, Japan',
+  heroImageCredit: { name: 'Louie Martinez', profileUrl: 'https://unsplash.com/@thetalkinglens?utm_source=wisewayround&utm_medium=referral' },
   tagline: "Tokyo's dining addresses cover ramen, tonkatsu, coffee, cocktails, department stores and several styles of restaurant.",
   intro: [
     'The directory works best as a starting point for district-based planning rather than a checklist for a single short stay. Shibuya food shopping, Shinjuku department-store browsing, Azabu-Juban pizza and a Nishi-Azabu meal each make a different outing — set the main reservation first, then choose supporting stops in the same district, since the full street address and building floor can matter more than the nearest broad area name.',
